@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Corben-Bold";
+  src: url(/assets/font/Corben/Corben-Bold.ttf)
+}
+
+@font-face {
+  font-family: "Corben-Regular";
+  src: url(/assets/font/Corben/Corben-Regular.ttf);
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+.navbar {
+  background-color: red;
+  font-size: 20px;
+  height: 120px;
+  font-family: Corben-Regular, sans-serif;
+  font-weight: bold;
+}
+
+ul img {
+  position: relative;
+  bottom: 30px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding-top: 45px;
+}
+
+ul input {
+  height: 60px;
+  font-size: 22px;
+  font-family: Corben-Regular, sans-serif;
+  position: relative;
+  bottom: 10px;
+  background-image: url(/assets/magnifier-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  padding-left: 3em;
+  border-radius: 11px;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+
+}
+
+ul a:hover {
+  border: 2px solid rgba(0, 0, 0, .15);
+  background-color: rgba(0, 0, 0, .15);
+  border-radius: 11px;
+  height: 45px;
+}
+
+h1 {
+  font-family: Corben-Regular, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.background-color {
+  background-color: red;
+}
+
+.seriously {
+  width: 1em;
+}
+
+.switch {
+  position: relative;
+  float: right;
+  bottom: 8em;
+  border: 1px solid white;
+  border-radius: 11px;
+  color: white;
+  width: auto;
+}
+
+.hashtags-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.font-family {
+  color: white;
+  font-family: Corben-Regular, sans-serif;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: flex;
+}
+
+.test {
+  display: flex;
+}
+
+.test img {
+  width: 73px;
+}
+
+main > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
