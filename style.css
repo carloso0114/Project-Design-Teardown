@@ -4,6 +4,12 @@
 }
 
 @font-face {
+  font-family: "MijaW03-Bold";
+  src: url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.eot");
+  src: url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.woff") format("woff"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.svg#MijaW03-Bold") format("svg");
+}
+
+@font-face {
   font-family: "Corben-Regular";
   src: url(/assets/font/Corben/Corben-Regular.ttf);
 }
@@ -20,26 +26,26 @@ body {
   background-color: red;
   font-size: 20px;
   height: 120px;
-  font-family: Corben-Regular, sans-serif;
+  font-family: MijaW03-Bold, sans-serif;
   font-weight: bold;
 }
 
-ul img {
+.navbar ul img {
   position: relative;
   bottom: 30px;
 }
 
-ul {
+.navbar ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
   padding-top: 45px;
 }
 
-ul input {
+.navbar ul input {
   height: 60px;
   font-size: 22px;
-  font-family: Corben-Regular, sans-serif;
+  font-family: MijaW03-Bold, sans-serif;
   position: relative;
   bottom: 10px;
   background-image: url(/assets/magnifier-icon.svg);
@@ -49,13 +55,13 @@ ul input {
   border-radius: 11px;
 }
 
-ul a {
+.navbar ul a {
   text-decoration: none;
   color: white;
 
 }
 
-ul a:hover {
+.navbar ul a:hover {
   border: 2px solid rgba(0, 0, 0, .15);
   background-color: rgba(0, 0, 0, .15);
   border-radius: 11px;
@@ -63,18 +69,14 @@ ul a:hover {
 }
 
 h1 {
-  font-family: Corben-Regular, sans-serif;
+  font-family: MijaW03-Bold, sans-serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 45px;
   color: white;
 }
 
 .background-color {
   background-color: red;
-}
-
-.seriously {
-  width: 1em;
 }
 
 .switch {
@@ -93,11 +95,28 @@ h1 {
 }
 
 .font-family {
-  color: white;
-  font-family: Corben-Regular, sans-serif;
-  background-color: red;
   width: 100%;
-  height: 100%;
+  color: white;
+  font-family: MijaW03-Bold, sans-serif;
+  background-color: red;
+  padding-left: 120px;
+  padding-top: 70px;
+  line-height: 1em;
+}
+
+.font-family h3 {
+  font-size: 25px;
+}
+
+.font-family span {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.font-family h2 {
+  font-size: 44px;
+  line-height: 20px;
 }
 
 .grid-container {
@@ -112,9 +131,52 @@ h1 {
   width: 73px;
 }
 
-main > div {
+.first-row-grid {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+.second-row-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.arrow {
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.about-membership {
+  background-color: violet;
+}
+
+.membership-container {
+  font-size: 20px;
+  font-family: MijaW03-Bold, sans-serif;
+  position: relative;
+  text-align: center;
+  inline-size: 750px;
+  left: 300px;
+  color: white;
+}
+
+.membership-container button {
+  font-size: 20px;
+  font-family: MijaW03-Bold, sans-serif;
+  color: white;
+  background-color: #41b14f;
+  width: 18em;
+  padding: 1em;
+  border-radius: 11px;
+}
+
+.membership-container img {
+ float: right;
+ position: relative;
+ left: 20em;
+}
