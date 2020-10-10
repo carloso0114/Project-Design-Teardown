@@ -16,6 +16,7 @@
 
 :root {
   box-sizing: border-box;
+  font-family: MijaW03-Bold, sans-serif;
 }
 
 body {
@@ -153,6 +154,7 @@ h1 {
 
 .about-membership {
   background-color: violet;
+  width: 100%;
 }
 
 .membership-container {
@@ -163,6 +165,7 @@ h1 {
   inline-size: 750px;
   left: 300px;
   color: white;
+
 }
 
 .membership-container button {
@@ -180,3 +183,25 @@ h1 {
  position: relative;
  left: 20em;
 }
+
+.container-lastest-posts {
+  display: flex;
+  width: 100%;
+}
+
+.posts {
+  background-color: turquoise;
+}
+
+.features-members img {
+
+  width: 20em;
+}
+
+.features-members {
+  width: 130em;
+  text-align: center;
+  color: white;
+  background-color: thistle;
+}
+
