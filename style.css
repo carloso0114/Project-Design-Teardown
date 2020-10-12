@@ -19,10 +19,6 @@
   font-family: MijaW03-Bold, sans-serif;
 }
 
-body {
-  background-color: gray;
-}
-
 .navbar {
   background-color: red;
   font-size: 20px;
@@ -66,7 +62,7 @@ body {
   border: 2px solid rgba(0, 0, 0, .15);
   background-color: rgba(0, 0, 0, .15);
   border-radius: 11px;
-  height: 45px;
+  height: 25px;
 }
 
 h1 {
@@ -165,18 +161,23 @@ h1 {
 }
 
 .membership-container {
+  padding-top: 1em;
+  height: 20em;
   font-size: 20px;
-  font-family: MijaW03-Bold, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
-  text-align: center;
-  inline-size: 750px;
-  left: 300px;
+  text-align: left;
+  inline-size: 50em;
+  left: 150px;
   color: white;
+}
 
+.line-height {
+  line-height: 2.2em;
 }
 
 .membership-container button {
-  font-size: 20px;
+  font-size: 16px;
   font-family: MijaW03-Bold, sans-serif;
   color: white;
   background-color: #41b14f;
@@ -186,36 +187,123 @@ h1 {
 }
 
 .membership-container img {
- float: right;
- position: relative;
- left: 20em;
+  float: right;
+  transform: rotate(-15deg);
+  bottom: 3em;
+  position: relative;
+  width: 11em;
 }
 
+.arrow-line-height {
+  margin-top: 10em;
+  padding-bottom: 1em;
+}
+.arrow-line-height2 {
+  margin-top: 3em;
+  padding-bottom: 1em;
+}
+
+.arrow2 {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
 .container-lastest-posts {
   display: flex;
-  width: 100%;
+}
+.container-lastest-posts div {
+ width: 100%;
 }
 
 .posts {
   padding-top: 50px;
-  background-color: turquoise;
+  padding: 3em;
+  background-color: burlywood;
+  border: 1px solid blue;
 }
 
-.features-members img {
-  width: 20em;
+.posts h1 {
+  text-align: left;
+  color: black;
+  text-decoration: underline;
+  font-size: 1.9em;
+}
+.posts span {
+  text-decoration: underline;
+}
+
+.posts p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.9em;
 }
 
 .features-members {
-  width: 136em;
+  border-radius: 30px;
   text-align: center;
   color: white;
-  background-color: thistle;
+  background-color: red;
 }
 
-.features-members button{
+.features-members img {
+  width: 15em;
+}
+
+.features-members button {
   font-family: MijaW03-Bold, sans-serif;
+  font-size: 1.5em;
   font-weight: bold;
   color: blue;
+  padding: 0.5em;
   border-radius: 11px;
 }
 
+.features-members h3 {
+  font-size: 3em;
+  text-decoration: underline;
+  text-decoration-color: #f0f0f09a;
+  margin: 0px 0px 0px 0px;
+}
+
+.features-members p {
+  font-size: 20px;
+}
+
+.support-ad {
+  padding: 0em 3em 3em 3em;
+  text-align: center;
+}
+
+.support-ad h5{
+  text-align: center;  
+}
+
+.support-ad img {
+  width: 15em;
+}
+
+.support-ad div {
+  border: 0.1em solid #000;
+  border-radius: 11px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.support-ad button {
+  padding: 10px;
+  color: white;
+  background-color: gray;
+  border-radius: 11px;
+}
+
+.support-ad p {
+  font-size: 18px;
+}
+
+.newsletter-section img {
+  width: 100px;
+}
+
+.footer-bar img {
+  width: 100px;
+}
