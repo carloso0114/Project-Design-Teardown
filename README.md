@@ -4,7 +4,8 @@
 
 > The goal for this exercise is to start to think in terms of visual hierarchy, typography and design principles.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot1.png)
+![screenshot](./app_screenshot2.png)
 
 I created this project using some images and buttons tags, also we used flex boxes, floats and gird systems for positioning.
 
@@ -19,7 +20,7 @@ I created this project using some images and buttons tags, also we used flex box
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/carloso0114/Project-Design-Teardown/fb4f7135af4b8e7e74d01435c6bca8558f8e611e/index.html)
 
 
 ## How to run it
