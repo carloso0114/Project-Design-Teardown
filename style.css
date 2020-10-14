@@ -1,22 +1,26 @@
 @font-face {
-  font-family: "Corben-Bold";
-  src: url(/assets/font/Corben/Corben-Bold.ttf)
-}
-
-@font-face {
   font-family: "MijaW03-Bold";
   src: url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.eot");
   src: url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.woff") format("woff"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7bd7f049ab12f7efc10d48e5fa57a618.svg#MijaW03-Bold") format("svg");
 }
 
-@font-face {
-  font-family: "Corben-Regular";
-  src: url(/assets/font/Corben/Corben-Regular.ttf);
-}
-
 :root {
   box-sizing: border-box;
+  background-color: var(--main-bg-color);
   font-family: MijaW03-Bold, sans-serif;
+
+  --important-bg-color: #484848;
+
+  /* background-color: var(--important-bg-color); */
+  --normal-bg-color: #686868;
+
+  /* background-color: var(--normal-bg-color); */
+  --less-important-bg-color: #808080;
+
+  /* background-color: var(--less-important-bg-color); */
+  --main-bg-color: #a9a9a9;
+
+  /* background-color: var( --main-bg-color); */
 }
 
 header h1 {
@@ -25,16 +29,32 @@ header h1 {
   color: white;
 }
 
+a {
+  color: white;
+}
+
 .navbar {
-  background-color: red;
+  background-color: var(--normal-bg-color);
   font-size: 20px;
   height: 120px;
   font-weight: bold;
 }
 
-.navbar ul img {
+.img-logo {
+  padding-right: 250px;
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
+  right: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-bar a {
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .navbar ul {
@@ -49,39 +69,13 @@ header h1 {
   font-size: 22px;
   font-family: MijaW03-Bold, sans-serif;
   position: relative;
-  bottom: 10px;
+  bottom: 20px;
   background-image: url(/assets/magnifier-icon.svg);
   background-repeat: no-repeat;
   background-position: 10px 50%;
   padding-left: 3em;
   border-radius: 11px;
-}
-
-.navbar ul a {
-  text-decoration: none;
-  color: white;
-
-}
-
-.navbar ul a:hover {
-  border: 2px solid rgba(0, 0, 0, .15);
-  background-color: rgba(0, 0, 0, .15);
-  border-radius: 11px;
-  height: 25px;
-}
-
-.background-color {
-  background-color: red;
-}
-
-.switch {
-  position: relative;
-  float: right;
-  bottom: 8em;
-  border: 1px solid white;
-  border-radius: 11px;
-  color: white;
-  width: auto;
+  filter: grayscale(100%);
 }
 
 .hashtags-links a {
@@ -89,10 +83,26 @@ header h1 {
   color: white;
 }
 
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul a:hover {
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  height: 25px;
+}
+
+.background-tittle-color {
+  background-color: var(--important-bg-color);
+}
+
 .font-family {
   width: 100%;
   color: white;
-  background-color: red;
+  background-color: var(--less-important-bg-color);
   padding-left: 120px;
   padding-top: 70px;
   margin-left: -50px;
@@ -111,7 +121,6 @@ header h1 {
 
 .font-family h2 {
   font-size: 44px;
-
 }
 
 .grid-container {
@@ -124,6 +133,7 @@ header h1 {
   transform: rotate(-10deg);
   border: 3px solid gray;
   margin-right: 10px;
+  filter: grayscale(100%);
 }
 
 .first-row-grid {
@@ -155,7 +165,7 @@ header h1 {
 }
 
 .about-membership {
-  background-color: violet;
+  background-color: var(--important-bg-color);
   width: 100%;
 }
 
@@ -179,7 +189,7 @@ header h1 {
   font-size: 16px;
   font-family: MijaW03-Bold, sans-serif;
   color: white;
-  background-color: #41b14f;
+  background-color: var(--important-bg-color);
   width: 18em;
   padding: 1em;
   border-radius: 11px;
@@ -191,6 +201,7 @@ header h1 {
   bottom: 3em;
   position: relative;
   width: 11em;
+  filter: grayscale(100%);
 }
 
 .arrow-line-height {
@@ -218,9 +229,9 @@ header h1 {
 }
 
 .posts {
-  padding-top: 50px;
   padding: 3em;
-  background-color: burlywood;
+  padding-top: 50px;
+  background-color: var(--less-important-bg-color);
 }
 
 .posts h1 {
@@ -244,27 +255,29 @@ header h1 {
   border-radius: 30px;
   text-align: center;
   color: white;
-  background-color: red;
+  background-color: var(--important-bg-color);
 }
 
 .features-members img {
   width: 15em;
+  filter: grayscale(100%);
 }
 
 .features-members button {
   font-family: MijaW03-Bold, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  color: blue;
+  color: white;
   padding: 0.5em;
   border-radius: 11px;
+  background-color: var(--important-bg-color);
 }
 
 .features-members h3 {
   font-size: 3em;
   text-decoration: underline;
   text-decoration-color: #f0f0f09a;
-  margin: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
 }
 
 .features-members p {
@@ -272,7 +285,7 @@ header h1 {
 }
 
 .support-ad {
-  padding: 0em 3em 3em 3em;
+  padding: 0 3em 3em 3em;
   text-align: center;
 }
 
@@ -282,6 +295,7 @@ header h1 {
 
 .support-ad img {
   width: 15em;
+  filter: grayscale(100%);
 }
 
 .support-ad div {
@@ -294,7 +308,7 @@ header h1 {
 .support-ad button {
   padding: 10px;
   color: white;
-  background-color: gray;
+  background-color: var(--important-bg-color);
   border-radius: 11px;
 }
 
@@ -306,11 +320,12 @@ header h1 {
   border-radius: 10px;
   text-align: center;
   color: white;
-  background-color: red;
+  background-color: var(--important-bg-color);
 }
 
 .new-episodes img {
   width: 15em;
+  filter: grayscale(100%);
 }
 
 .new-episodes h3 {
@@ -329,16 +344,17 @@ header h1 {
   font-family: MijaW03-Bold, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  color: rgb(33, 58, 199);
+  color: white;
   padding: 0.5em;
   border-radius: 11px;
+  background-color: var(--important-bg-color);
 }
 
 .center {
-  padding: 100px 0px 1px 0px;
+  padding: 100px 0 1px 0;
   display: block;
   font-size: 0.9em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   margin-bottom: 90px;
 }
@@ -353,7 +369,7 @@ header h1 {
   display: block;
   padding-top: 50px;
   text-align: center;
-  background-color: tomato;
+  background-color: var(--important-bg-color);
 }
 
 .contents h1 {
@@ -374,13 +390,15 @@ header h1 {
 .contents button {
   font-family: MijaW03-Bold, sans-serif;
   font-size: 1.5em;
-  color: blue;
+  color: white;
   padding: 0.7em;
   border-radius: 11px;
+  background-color: var(--important-bg-color);
 }
 
 .contents img {
   width: 1000px;
+  filter: grayscale(100%);
 }
 
 .aside-txt {
@@ -393,6 +411,7 @@ header h1 {
 .person-otw {
   margin-top: 50px;
   margin-left: -50px;
+  background-color: var(--less-important-bg-color);
 }
 
 .person-otw img {
@@ -402,6 +421,7 @@ header h1 {
   border: 10px solid gray;
   border-radius: 10px;
   margin-right: 50px;
+  filter: grayscale(100%);
 }
 
 .person-otw p {
@@ -421,32 +441,25 @@ header h1 {
   transform: rotate(-10deg);
   border: 3px solid gray;
   margin-right: 10px;
-  
+  filter: grayscale(100%);
 }
 
 .grid-container2 span {
   text-decoration: underline;
 }
 
-.footer-bar img {
-  width: 100px;
-}
-
 .smashing-book-container {
   display: block;
-  background-color: tomato;
+  background-color: var(--important-bg-color);
   height: 350px;
 }
 
 .smashing-book {
-  padding-top: 20px;
-  background-color: burlywood;
   text-align: left;
   color: white;
   margin-left: 60px;
   padding-right: 100px;
 }
-
 
 .smashing-book h1 {
   text-decoration: underline;
@@ -466,9 +479,10 @@ header h1 {
 .smashing-book button {
   font-family: MijaW03-Bold, sans-serif;
   font-size: 1.5em;
-  color: blue;
+  color: white;
   padding: 0.7em;
   border-radius: 11px;
+  background-color: var(--important-bg-color);
 }
 
 .smashing-book img {
@@ -477,16 +491,22 @@ header h1 {
   float: right;
   width: 200px;
   transform: rotate(-15deg);
+  filter: grayscale(100%);
 }
 
 .smashguideto-container {
-  display: flex;
+  background-color: var(--less-important-bg-color);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 50px;
 }
 
 .smashguideto-post {
- border: 1px solid blue;
- padding: 60px 90px 60px 60px;
+  padding: 60px 60px 70px 0;
+}
 
+.padding-left {
+  padding-left: 40px;
 }
 
 .smashguideto-post h3 {
@@ -497,28 +517,28 @@ header h1 {
   text-decoration: underline;
 }
 
-
 .smashguideto-post p {
-  margin: 20px 0px 40px 0px;
+  margin: 20px 0 40px 0;
 }
 
 .smashguideto-post button {
   font-family: MijaW03-Bold, sans-serif;
   font-size: 1.5em;
-  color: blue;
   padding: 0.7em;
   border-radius: 11px;
 }
 
-.newsletter-section{
-  background-color: red;
+.newsletter-section {
+  background-color: var(--important-bg-color);
   border-radius: 10px;
   padding-top: 30px;
-  height: 780px;
+  padding-bottom: 5px;
+  height: 100%;
 }
 
 .pic-div img {
-  width: 711px;
+  width: 100%;
+  filter: grayscale(100%);
 }
 
 .newsletter-section h1 {
@@ -534,15 +554,16 @@ header h1 {
 
 .inp-txt {
   padding: 10px 50px 17px 20px;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
   font-size: 24px;
 }
+
 .inp-btn {
   position: relative;
   right: 4px;
   padding: 10px 50px 17px 50px;
-  border-radius: 0px 10px 10px 0px;
-  background-color: blue;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--important-bg-color);
   color: white;
   font-size: 25px;
   font-family: MijaW03-Bold, sans-serif;
@@ -550,13 +571,13 @@ header h1 {
 
 .cloud-text {
   color: white;
-  line-height: 0.5em;
+  line-height: 1em;
   text-align: center;
   padding: 1px;
   margin-top: 40px;
-  margin-left: 150px;
-  margin-right: 150px;
-  background-color: blue;
+  margin-left: 120px;
+  margin-right: 120px;
+  background-color: var(--normal-bg-color);
   border-radius: 10px;
 }
 
@@ -565,13 +586,13 @@ header h1 {
   padding-bottom: 20px;
   display: block;
   font-size: 0.9em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   color: white;
 }
 
 footer {
-  background-color: blue;
+  background-color: var(--normal-bg-color);
   text-align: center;
   background-image: url(assets/img/bird.svg);
   background-repeat: no-repeat;
@@ -579,10 +600,6 @@ footer {
   background-position-y: 150px;
   background-position-x: 140px;
   padding-bottom: 50px;
-}
-
-footer ul {
-  list-style: none;
 }
 
 footer li {
@@ -605,12 +622,3 @@ footer li:hover {
   color: white;
   line-height: 0.1em;
 }
-
-  
-.footer-bar a {
-  color: white;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-
