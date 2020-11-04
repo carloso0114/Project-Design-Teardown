@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple steps.
 
 👤 **carloso0114**
 
-- GitHub: [@carloso0114](https://github.com/AlejandroNo4)
+- GitHub: [@carloso0114](https://github.com/carloso0114)
 - Twitter: [@Carlos_Osp1](https://twitter.com/Carlos_Osp1)
 - LinkedIn: [Carlos Ospina](https://www.linkedin.com/in/carlos-ospina-242b831a6/)
 
