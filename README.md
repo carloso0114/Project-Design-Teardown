@@ -20,7 +20,7 @@ I created this project using some images and buttons tags, also we used flex box
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/carloso0114/Project-Design-Teardown/79098710a6601b75dd0cab500deae4905e470694/index.html)
+[Live Demo Link](https://carloso0114.github.io/Project-Using-Bootstrap/.)
 
 
 ## How to run it
